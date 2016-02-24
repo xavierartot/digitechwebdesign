@@ -1,0 +1,24 @@
+.hero {
+  color: #fff;
+  background-color: #2a4457;
+  height: 500px;
+  outline: solid;
+  outline-offset: -10px;   
+  outline-color: #375364;
+  outline-width: 1px;
+}
+.navbar-brand {
+  @include size(246px, 63px);
+  padding: 0;
+  img {
+    margin-left: 37px;
+  }
+}
+.navbar-default {
+
+  background-color: transparent;
+  border: 0;
+  .navbar-brand {
+    text-indent: -50000px;
+  }
+}
