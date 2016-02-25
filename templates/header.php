@@ -24,17 +24,24 @@
     </div>
   </header>
 
-  <div class='hero-text'>
-    <img src='<?php echo get_template_directory_uri(); ?>/dist/images/Tree.png' alt='tree image' />
-    <div class='border'>
-    </div>
-    <div class='align-left'>
-      <p>
-        <span>rethink.</span>
-        Enjoy your family at Five Mile Dam Park
-      </p>
-    </div>
-  </div>
+  <div class='container-hero'>
 
-  <a href='' class='learn-more'>Learn more</a>
+    <div class='hero-text'>
+
+      <img src='<?php echo get_template_directory_uri(); ?>/dist/images/Tree.png' alt='tree image' />
+      <div class='border'>
+      </div>
+      <div class='align-left'>
+        <p>
+          <span>rethink.</span>
+          Enjoy your family at Five Mile Dam Park
+        </p>
+      </div>
+    </div>
+
+    <a href='' class='learn-more'>Learn more <i class='fa fa-arrow-right'></i></a>
+
+   
+  </div>
+ 
 </div>

@@ -1,4 +1,19 @@
-
+//button
+@mixin button-bv($col, $bgcd) {
+    @include centerer();
+    display: block;
+    padding: 1em 1.2em;
+    border: 2px solid $bgcd;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    color: $col;
+    &:hover  {
+      color: $bgcd;
+      background-color: $col;
+    }
+   @include fa(arrow-right, after);
+}
+/*font*/
 @mixin fa ($icon, $position: before) {
   display: inline-block;
   &:#{$position} {

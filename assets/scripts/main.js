@@ -18,6 +18,24 @@
     // All pages
     'common': {
       init: function() {
+        $('.navbar-nav').find('a').addClass('pullUp')
+        .parent('li');
+        //.hover(function (e) {
+          ////$(this).removeClass().addClass('pullDown');
+
+            //$(this) 
+            //.animate({ "top": "-=200px" }, "slow" )
+            //.find('a').animate({ "top": "+=200px" }, "slow" ); 
+
+          //console.log(e.target);
+          // event handler
+        //}, function (e) {
+          //$(this).removeClass().addClass('pullUp ');
+            //$(this).animate({ "top": "+=200px" }, "slow" ); 
+            //console.log(e.target);
+          // event handler
+          // event handler
+        //});
         // JavaScript to be fired on all pages
       },
       finalize: function() {

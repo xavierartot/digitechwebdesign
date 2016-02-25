@@ -3,7 +3,11 @@
 // Automatically injected Bower dependencies via wiredep (never manually edit this block)
 // bower:scss
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "../../bower_components/font-awesome/scss/font-awesome.scss";
 // endbower
+
+/*https://github.com/xavierartot/animations.css/blob/master/anim.css*/
+@import "common/animate";
 
 @import "common/mixins";
 @import "common/global";

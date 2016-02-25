@@ -1,15 +1,3 @@
-/*@mixin beleved-corner($bg, $t1:0, $tr:$t1, $br:$t1, $b1:$tr ) {*/
-  /*background: $bg;*/
-  /*background:*/
-  /*linear-gradient(135deg, transparent $t1, $bg 0) top left,*/
-  /*linear-gradient(-135deg, transparent $tr, $bg 0) top right,*/
-  /*linear-gradient(-45deg, transparent $br, $bg 0) bottom right,*/
-  /*linear-gradient(45deg, transparent $b1, $bg 0) bottom left;*/
-  /*background-size: 51% 51%;*/
-  /*background-repeat: no-repeat;*/
-/*}*/
-/*Down-left pointing*/
-
 .navbar-nav>.active>a  {
   &:before {
     content: '';
@@ -24,12 +12,19 @@
     -webkit-backface-visibility: hidden;
     top: 0;
     padding-bottom: 50px;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0px 2px 3px 0px rgba(1, 28, 49,.7);
   }
 } 
 .navbar-nav{
   li {
-    a:hover{
-      /*triangle*/
+    a {
+      box-shadow: inset 0 0 0 0 #C14800;
+      transition: all ease 0.8s;
+    }
+    &:hover{
+      /*triangle under the background*/
+      /*background-position: 0 -100%;*/
       &:before {
         content: '';
         position: absolute;
@@ -43,12 +38,26 @@
         -webkit-backface-visibility: hidden;
         top: 0;
         padding-bottom: 50px;
+        box-shadow: 0px 2px 3px 0px rgba(1, 28, 49,.7);
+         box-shadow: inset 0 100px 0 0 #C14800;
       }
     }
     @media (min-width: 768px){
       a {
         padding-top: 40px;
         padding-bottom: 17px;
+      }
+    }
+    @media (max-width: $screen-lg){ 
+      a  {
+        font-size: 16px;
+      }
+    }
+    @media (max-width: $screen-md){ 
+      a  {
+        font-size: 12px;
+        padding-right: 10px;
+        padding-left: 10px;
       }
     }
   }
@@ -67,53 +76,47 @@
   /*max-width: 100%;*/
   /*height: auto;*/
   height: 847px;
-  .hero-text {
-    width: 37%;
-    background: red;
-    color: $brand-primary;
+
+  .container-hero {
     @include centerer();
-    img {
-      @include img-responsive();
-      float: left;
-    }
-    .border {
-      float: left;
-      border-left: 5px solid $blue-flashy;
-      margin-left: 5px;
-      margin-right: 10px;
-      @include size(5px, 124px);
-    }
-    .align-left {
-      
-      p  {
-        font-size: 2em;
-        text-transform: capitalize;
-        line-height: 0.9;
-       span {
-        font-size: 6em;
-        text-transform: uppercase;
-        display: block;
-         
-       } 
+    top: 40%;
+
+    .hero-text {
+      width: 127%;
+      /*background: red;*/
+      color: $brand-primary;
+      img {
+        @include img-responsive();
+        float: left;
       }
-      /*p:first-child {*/
-        /*font-size: 6em;*/
-        /*text-transform: uppercase;*/
-        /*[>margin-top: -25px;<]*/
-        /*position: relative;*/
-        /*top: -19px;*/
-      /*}*/
-      /*p:last-child  {*/
-        /*[>font-size: 1em;<]*/
-        /*text-transform: capitalize;*/
-        /*position: relative;*/
-        /*top: -45px;*/
-        /*font-size: 1.5em;*/
-      /*}*/
+      .border {
+        float: left;
+        border-left: 5px solid $blue-flashy;
+        margin-left: 5px;
+        margin-right: 10px;
+        @include size(5px, 124px);
+      }
+      .align-left {
+
+        p  {
+          font-size: 2em;
+          text-transform: capitalize;
+          line-height: 0.8;
+          span {
+            font-size: 3em;
+            text-transform: uppercase;
+            display: block;
+            padding-bottom: 25px;
+
+          } 
+        }
+      }
     }
   }
   .learn-more {
-    @include centerer();
+    /*background-color: red;*/
+    @include button-bv(#fff, #f17030);
+    top: 100%;
     margin-top: 20%;
   }
 
