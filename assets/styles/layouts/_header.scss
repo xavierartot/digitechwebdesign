@@ -1,11 +1,56 @@
 .hero {
   color: #fff;
   background-color: #2a4457;
-  height: 500px;
+  /*height: 500px;*/
   outline: solid;
-  outline-offset: -10px;   
+  outline-offset: -10px;
   outline-color: #375364;
   outline-width: 1px;
+  background-image: url(../images/Video.jpg);
+  background-size: cover;
+  /*max-width: 100%;*/
+  /*height: auto;*/
+  height: 847px;
+  .hero-text {
+  width: 30%;
+  background: red;
+  color: $brand-primary;
+  .border  {
+    border-left: 5px solid $blue-flashy;
+    margin-left: 5px;
+    margin-right: 12px;
+    p:first-child {
+      font-size: 6em;
+      text-transform: uppercase;
+      margin-top: -25px;
+    }
+    p:last-child  {
+      font-size: 1em;
+      text-transform: capitalize;
+    }
+  }
+  float: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%); 
+    img {
+      @include img-responsive();
+      float: left;
+    }
+    div {
+      float: left;
+    }
+  }
+
+}
+.overlay {
+  background-color: rgba(0,0,0,.5);
+  height: 847px;
+  width: 100%;
+  display: block;
+  position: absolute;
+
 }
 .navbar-brand {
   @include size(246px, 63px);
@@ -21,4 +66,15 @@
   .navbar-brand {
     text-indent: -50000px;
   }
+}
+.navbar-collapse {
+  margin-right: 35px;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.navbar-nav>nav>a {
+  /*border-top: 80px solid blue;*/
+  padding-right: 23px;
+  /*border-left: 40px solid transparent;*/
 }

@@ -1,4 +1,5 @@
 <div class='hero'>
+  <div class='overlay'></div>
   <header class="banner navbar navbar-default navbar-static-top " role="banner">
     <div class="">
       <div class="navbar-header">
@@ -23,4 +24,13 @@
       </nav>
     </div>
   </header>
+
+  <div class='hero-text'>
+    <img src='<?php echo get_template_directory_uri(); ?>/dist/images/Tree.png' alt='tree image' />
+    <div class='border'>
+      <p>rethink.</p>
+      <p>Enjoy your family at Five Mile Dam Park</p>
+    </div>
+  </div>
+  <a href='' class='learn-more'>Learn more</a>
 </div>
