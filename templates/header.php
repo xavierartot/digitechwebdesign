@@ -39,9 +39,13 @@
       </div>
     </div>
 
-    <a href='' class='learn-more'>Learn more <i class='fa fa-arrow-right'></i></a>
+    <a href='' class='learn-more'>Learn more</a>
+    <!--<i class='fa fa-arrow-right'></i>-->
 
-   
+    <div class='scroll'>
+      <img src='<?php echo get_template_directory_uri(); ?>/dist/images/Down.png' alt='down' />
+    </div>
+
   </div>
  
 </div>
