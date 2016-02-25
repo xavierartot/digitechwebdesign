@@ -1,0 +1,63 @@
+
+@mixin fa ($icon, $position: before) {
+  display: inline-block;
+  &:#{$position} {
+    // font: normal normal normal 14px/1 FontAwesome;
+    font-family: FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+    content: $icon;
+    @content;
+  }
+}
+@mixin beleved-corner($bg, $t1:0, $tr:$t1, $br:$t1, $b1:$tr ) {
+  background: $bg;
+  background:
+  linear-gradient(135deg, transparent $t1, $bg 0) top left,
+  linear-gradient(-135deg, transparent $tr, $bg 0) top right,
+  linear-gradient(-45deg, transparent $br, $bg 0) bottom right,
+  linear-gradient(45deg, transparent $b1, $bg 0) bottom left  !important;
+  background-size: 51% 51%;
+  background-repeat: no-repeat;
+}
+@mixin centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin slide-sep($mt) {
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: $brand-primary;
+  margin: $mt auto;
+  content: " ";
+  position: relative;
+  z-index: 1;
+
+}
+@mixin title($color, $borderColor) {
+  font-family: $font-family-content;
+  font-weight: 400;
+  font-size: 44px;
+  color: $color;
+  border-top: 5px solid $borderColor;
+  padding-top: 50px;
+  margin-top: 5px;
+  line-height: 47px;
+  display: inline-block;
+}
+@mixin title-section($font-size) {
+  font-family: $font-family-content;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: $gray-base;
+  text-align: center;
+  font-size: $font-size;
+  margin-bottom: 70px;
+  position: relative;
+}

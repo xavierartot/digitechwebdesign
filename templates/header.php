@@ -14,7 +14,6 @@
         </a>
       </div>
 
-
       <nav class="collapse navbar-collapse pull-right" role="navigation">
         <?php
         if (has_nav_menu('primary_navigation')) :
@@ -28,9 +27,14 @@
   <div class='hero-text'>
     <img src='<?php echo get_template_directory_uri(); ?>/dist/images/Tree.png' alt='tree image' />
     <div class='border'>
-      <p>rethink.</p>
-      <p>Enjoy your family at Five Mile Dam Park</p>
+    </div>
+    <div class='align-left'>
+      <p>
+        <span>rethink.</span>
+        Enjoy your family at Five Mile Dam Park
+      </p>
     </div>
   </div>
+
   <a href='' class='learn-more'>Learn more</a>
 </div>
