@@ -1,19 +1,46 @@
+/*hexagon*/
+@mixin hexagon($color) {
+  .hexagon {
+    /*position: relative;*/
+    width: 300px; 
+    height: 176px;
+    background-color: $color;
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      border-left: 150px solid transparent;
+      border-right: 150px solid transparent;
+    }
+  }
+  .hexagon:before {
+    bottom: 100%;
+    border-bottom: 100px solid $color;
+  }
+  .hexagon:after {
+    top: 100%;
+    width: 0;
+    border-top: 100px solid $color;
+  }
+
+}
 //button
 @mixin button-bv($col, $bgcd) {
-    @include centerer();
-    display: block;
-    padding: 1em 1.2em;
-    border: 2px solid $bgcd;
-    font-size: 1.6em;
-    text-transform: uppercase;
-    color: $col;
-    margin-right: 10px;
-    &:hover  {
-      color: $bgcd;
-      background-color: $col;
-    }
-   /*@include fa(arrow-right, after);*/
-   @include fa($fa-var-chevron-right , after);
+  @include centerer();
+  display: block;
+  padding: 1em 1.2em;
+  border: 2px solid $bgcd;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  color: $col;
+  margin-right: 10px;
+  &:hover  {
+    color: $bgcd;
+    background-color: $col;
+  }
+  /*@include fa(arrow-right, after);*/
+  @include fa($fa-var-chevron-right , after);
 
 }
 /*font*/
