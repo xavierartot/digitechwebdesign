@@ -151,6 +151,7 @@
     .learn-more {
       /*background-color: red;*/
       @include button-bv(#fff, #f17030);
+      @include centerer();
       top: 100%;
       margin-top: 20%;
         text-decoration: none;

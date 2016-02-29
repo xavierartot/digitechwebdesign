@@ -2,3 +2,6 @@ body {
   color: #1e374c;
   background-color: #fff;
 }
+.wrap {
+ @include make-row();
+}

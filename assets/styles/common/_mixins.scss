@@ -1,5 +1,5 @@
 /*hexagon*/
-@mixin hexagon($color) {
+@mixin hexagon($color, $class) {
   .hexagon {
     /*position: relative;*/
     width: 300px; 
@@ -27,7 +27,7 @@
 }
 //button
 @mixin button-bv($col, $bgcd) {
-  @include centerer();
+  /*@include centerer();*/
   display: block;
   padding: 1em 1.2em;
   border: 2px solid $bgcd;
@@ -41,10 +41,9 @@
   }
   /*@include fa(arrow-right, after);*/
   @include fa($fa-var-chevron-right , after);
-
 }
 /*font*/
-@mixin fa ($icon, $position: before) {
+@mixin fa($icon, $position: before) {
   display: inline-block;
   &:#{$position} {
     // font: normal normal normal 14px/1 FontAwesome;
