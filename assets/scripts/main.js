@@ -18,25 +18,64 @@
     // All pages
     'common': {
       init: function() {
-        $('.navbar-nav').find('a').addClass('pullUp')
-        .parent('li');
-        //.hover(function (e) {
-          ////$(this).removeClass().addClass('pullDown');
+        var $navbar = $('.navbar-nav');
 
-            //$(this) 
-            //.animate({ "top": "-=200px" }, "slow" )
-            //.find('a').animate({ "top": "+=200px" }, "slow" ); 
+        $navbar.find('a').addClass('pullUp');
 
-          //console.log(e.target);
-          // event handler
-        //}, function (e) {
-          //$(this).removeClass().addClass('pullUp ');
-            //$(this).animate({ "top": "+=200px" }, "slow" ); 
-            //console.log(e.target);
-          // event handler
-          // event handler
-        //});
-        // JavaScript to be fired on all pages
+    var $container = $('.masonry');
+
+    $('.owl-carousel').owlCarousel({
+      loop:true,
+      animateOut: 'slideOutDown',
+      animateIn: 'flipInX',
+      margin:10,
+      nav:true,
+      pagination: true,
+      paginationNumbers: true,
+      stopOnHover: true,
+      dotsData: true,
+      responsive:{
+        0:{
+          items:1
+        }
+      }
+    });
+
+
+    var dot = document.getElementsByClassName("owl-dot");
+    //console.log(dot);
+    var count = 1;
+    for (var i = 0; i < dot.length; i++) {
+      var v = dot[i];
+      v.innerHTML = '0' + count++;
+      console.log(v);
+    }
+
+    // init Masonry after all images have loaded
+    //var $grid = $('.grid').imagesLoaded( function() {
+    //$grid.masonry({
+    //itemSelector: '.grid-item',
+    //percentPosition: true,
+    //columnWidth: '.grid-sizer'
+    //}); 
+    //});
+    //$('.grid').masonry({
+    //// options
+    //itemSelector: '.grid-item',
+    //columnWidth: 200
+    //});
+
+    //console.log("value");
+    //http://jsfiddle.net/desandro/QsCZx/
+    //$('.isot').isotope({
+    //// options...
+    //itemSelector: '.item',
+    //masonry: {
+    //columnWidth: 200
+    //}
+    //});
+
+    // JavaScript to be fired on all pages
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
@@ -54,6 +93,12 @@
     // About us page, note the change from about-us to about_us.
     'about_us': {
       init: function() {
+        // JavaScript to be fired on the about us page
+      }
+    },
+    'builders': {
+      init: function() {
+        //console.log("value");
         // JavaScript to be fired on the about us page
       }
     }

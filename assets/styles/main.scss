@@ -1,4 +1,5 @@
 @import "common/variables";
+@import "common/_carousel.scss"; 
 
 // Automatically injected Bower dependencies via wiredep (never manually edit this block)
 // bower:scss
@@ -8,7 +9,6 @@
 
 /*https://github.com/xavierartot/animations.css/blob/master/anim.css*/
 @import "common/animate";
-
 @import "common/mixins";
 @import "common/global";
 @import "components/buttons";

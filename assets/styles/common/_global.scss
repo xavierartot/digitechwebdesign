@@ -5,3 +5,13 @@ body {
 .wrap {
  @include make-row();
 }
+
+/**, *:before, *:after {box-sizing:  border-box;}*/
+
+/* force scrollbar */
+html { overflow-y: scroll; }
+h2 {
+  color: $blue-title;
+  font-size: 3em;
+  text-align: left;
+}

@@ -91,71 +91,216 @@
         <h2>Our Builders</h2>
       </div>
       <div class='row '>
-        <div class='logo-builder'>
+        <div class='logo-title'>
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tree-line.png" alt="tree icons"/>
         </div>
       </div>
       <div class='hexagon-row-1 row'>
         <div class='col-lg-offset-0'>
-          <img class='' src="<?php echo get_template_directory_uri(); ?>/assets/images/builder-1.png" alt="tree icons"/>
+          <a href=''>
+            <img class='' src="<?php echo get_template_directory_uri(); ?>/assets/images/builder-1.png" alt="tree icons"/>
+          </a>
         </div>
         <div>
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/builder-2.png" alt="tree icons"/>
+          <a href=''>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/builder-2.png" alt="tree icons"/>
+          </a>
         </div>
         <div>
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/builder-3.png" alt="tree icons"/>
+          <a href=''>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/builder-3.png" alt="tree icons"/>
+          </a>
         </div>
         <div>
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/builder-4.png" alt="tree icons"/>
+          <a href=''>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/builder-4.png" alt="tree icons"/>
+          </a>
         </div>
       </div>
       <div class='hexagon-row-2 row'>
         <div class='col-lg-offset-1 '>
-          <img src='<?php echo get_template_directory_uri(); ?>/assets/images/builder-5.png' alt='' />
+          <a href=''>
+            <img src='<?php echo get_template_directory_uri(); ?>/assets/images/builder-5.png' alt='' />
+          </a>
         </div>
         <div class=''>
-          <img src='<?php echo get_template_directory_uri(); ?>/assets/images/builder-6.png' alt='' />
+          <a href=''>
+            <img src='<?php echo get_template_directory_uri(); ?>/assets/images/builder-6.png' alt='' />
+          </a>
         </div>
         <div class=''>
           <img src='<?php echo get_template_directory_uri(); ?>/assets/images/builder-7.png' alt='' />
+          </a>
         </div>
       </div>
-      <!--<div class='content-image'>-->
-      <!--Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod-->
-      <!--tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At-->
-      <!--vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,-->
-      <!--no sea takimata sanctus est Lorem ipsum dolor sit amet.-->
-      <!--Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod-->
-      <!--tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At-->
-      <!--vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,-->
-      <!--no sea takimata sanctus est Lorem ipsum dolor sit amet. w-->
-      <!--</div>-->
     </div>
   </div>
   </div>
 
   <div class='bloc-home-plans'>
-    <div class='container-fluid '>
+    <div class='container'>
       <div class='row'>
         <h2>our home-plans</h2>
-        <div class='content-image'>
+      </div>
+      <div class='row '>
+        <div class='logo-title'>
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tree-line.png" alt="tree icons"/>
         </div>
       </div>
+
+      <div class='row first-row'>
+        <div class='col-lg-3 col-md-3 col-sm-6'>    
+          <div class='bx1 bx'>
+            <img class="img-responsive " src="<?php echo get_template_directory_uri(); ?>/assets/images/grid-1.jpg" />
+            <div class='content-home-plan'>
+              <p>Brandeis</p>
+              <p>From $359,990</p>
+            </div>
+          </div>
+        </div>
+        <div class='col-lg-3 col-md-3 col-sm-6'>    
+          <div class='bx2 bx'>
+            <img class="img-responsive " src="<?php echo get_template_directory_uri(); ?>/assets/images/grid-2.jpg" />
+            <div class='content-home-plan'>
+              <p>Pomona</p>
+              <p>From 449,990</p>
+              <div class='bloc-img'>
+                <span>
+                  <img src='<?php echo get_template_directory_uri(); ?>/assets/images/ico-home-plan-sq.png'   alt='' />
+                </span>
+                <span>
+                  <img src='<?php echo get_template_directory_uri(); ?>/assets/images/ico-home-plan-bath.png' alt='' />
+                </span>
+                <span>
+                  <img src='<?php echo get_template_directory_uri(); ?>/assets/images/ico-home-plan-bed.png'  alt='' />
+                </span>
+                <span>
+                  <img src='<?php echo get_template_directory_uri(); ?>/assets/images/ico-home-plan-car.png'  alt='' />
+                </span>
+              </div>
+              <span>
+                <button href='' class='btn btn-bv'>discover</button>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class='col-lg-3 col-md-3 col-sm-6'>    
+          <div class='bx3 bx'>
+            <img class="img-responsive " src="<?php echo get_template_directory_uri(); ?>/assets/images/grid-3.jpg" />
+            <div class='content-home-plan'>
+              <p>vassar</p>
+              <p>From $359,990</p>
+            </div>
+          </div>
+        </div>
+        <div class='col-lg-3 col-md-3 col-sm-6 '>    
+          <div class='bx3 bx'>
+            <img class="img-responsive " src="<?php echo get_template_directory_uri(); ?>/assets/images/grid-4.jpg" />
+            <div class='content-home-plan'>
+              <p>carleton</p>
+              <p>From $359,990</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='row second-row'>
+        <div class='col-lg-3 col-md-3 col-width3 col-sm-6'>    
+          <div class='bx4 bx'>
+            <img class="img-responsive " src="<?php echo get_template_directory_uri(); ?>/assets/images/grid-5.jpg" />
+            <div class='content-home-plan'>
+              <p>Bryn mawr</p>
+              <p>From $359,990</p>
+            </div>
+          </div>
+        </div>
+        <div class='col-lg-3 col-md-3 col-md-3 col-width4 col-sm-6'>    
+          <div class='bx5 bx'>
+            <img class="img-responsive " src="<?php echo get_template_directory_uri(); ?>/assets/images/grid-6.jpg" />
+            <div class='content-home-plan'>
+              <p>white lodge</p>
+              <p>From $359,990</p>
+            </div>
+          </div>
+        </div>
+        <div class='col-lg-3 col-md-3 col-sm-6 '>    
+          <div class='bx6 bx'>
+            <img class="img-responsive " src="<?php echo get_template_directory_uri(); ?>/assets/images/grid-7.jpg" />
+            <div class='content-home-plan'>
+              <p>barnard</p>
+              <p>From $359,990</p>
+            </div>
+          </div>
+        </div>
+        <div class='col-lg-3 col-md-3 col-sm-6 md--height'>    
+          <div class='bx7 bx'>
+            <img class="img-responsive " src="<?php echo get_template_directory_uri(); ?>/assets/images/grid-8.jpg" />
+            <div class='content-home-plan'>
+              <p>amherst</p>
+              <p>From $359,990</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </div>
+
+
+
+  </div> <!--end bloc-->
+
+
+
 
   <div class='bloc-our-amenities'>
-    <div class='bgc'></div>
-    <!--cut border togheter-->
-    <div class='border'></div>
+    <div class='container-fluid '>
+      <div class='row bx-title'>
+        <div class='title'>
+          <h2>our amenities</h2>
+        </div>
+        <div class='line-orange '>
+          line orange design
+        </div>
+      </div>
+    </div>   
     <div class='container'>
-      <h2>our amenities</h2>
+
       <div class='content-carousel'>
+        <div class='fishing'>
+          sdfsdf
+          s
+          dfsdfsdf
+        </div>
+        <div class="owl-carousel owl-theme">
+          <div class='item'>
+            <img src='<?php echo get_template_directory_uri(); ?>/assets/images/amenities-carousel1.jpg'  alt='carousel' />
+          </div>
+          <div class='item'>
+            <img src='<?php echo get_template_directory_uri(); ?>/assets/images/amenities-carousel1.jpg'  alt='carousel' />
+          </div>
+          <div class='item'>
+            <img src='<?php echo get_template_directory_uri(); ?>/assets/images/amenities-carousel1.jpg'  alt='carousel' />
+          </div>
+          <div class='item'>
+            <img src='<?php echo get_template_directory_uri(); ?>/assets/images/amenities-carousel1.jpg'  alt='carousel' />
+          </div>
+          <div class='item'>
+            <img src='<?php echo get_template_directory_uri(); ?>/assets/images/amenities-carousel1.jpg'  alt='carousel' />
+          </div>
+          <div class='item'>
+            <img src='<?php echo get_template_directory_uri(); ?>/assets/images/amenities-carousel1.jpg'  alt='carousel' />
+          </div>
+        </div>
+        <!--<div class="owl-carousel">-->
+        <!--<div data-dot="1"></div>-->
+        <!--<div data-dot="2"></div>-->
+        <!--<div data-dot="3"></div>-->
+        <!--<div data-dot="4"></div>-->
+        <!--</div>-->
       </div>
       <div class='bloc-explore-community'>
       </div>
     </div>
-  </div>
+  </div><!--end bloc-->
 
   <div class='bloc-talking-about'>
     <div class='container'>
@@ -165,7 +310,113 @@
         </div>
       </div>
     </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+          <div class="post">
+            1
+            Bacon ipsum dolor amet chuck cow strip steak ham. Venison sirloin ball tip chicken, meatloaf bresaola biltong capicola prosciutto. Rump frankfurter pork chop tenderloin cow venison sirloin drumstick beef short ribs ball tip spare ribs. Tongue short loin bresaola, boudin swine pork ham turducken pig capicola meatball.
+          </div>
+          <div class="post">
+            2
+            Ball tip chicken shoulder kevin sirloin biltong pastrami andouille fatback shank cow. Turkey tail pancetta pork chop brisket ham hock. Alcatra shoulder meatloaf salami spare ribs. Beef picanha ham meatloaf tri-tip boudin porchetta prosciutto strip steak jerky kevin doner. Cupim ribeye salami spare ribs landjaeger boudin pork chop jerky filet mignon beef ribs sirloin. Cupim doner biltong jerky brisket kevin shank hamburger turducken bacon salami fatback.
+          </div>
+          <div class="post">
+            3
+            Hamburger beef ribs boudin prosciutto ground round. Salami jowl short ribs, frankfurter filet mignon pork belly cow. Strip steak t-bone sirloin shoulder pork chop hamburger picanha venison tenderloin salami spare ribs corned beef. Tri-tip andouille meatball kevin, porchetta ball tip pork belly hamburger bacon pig pastrami spare ribs strip steak. Leberkas salami sausage andouille. Shank corned beef pancetta cow fatback cupim leberkas ball tip. Cow pork swine, meatball kevin pork loin fatback rump brisket tri-tip jowl turducken strip steak leberkas.                
+          </div>
+        </div> 
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+          <div class="post">
+            4
+            Corned beef prosciutto pork pork loin chicken turkey. Venison bresaola beef kielbasa swine tenderloin tongue pork chuck sirloin corned beef ribeye cupim t-bone. Salami pork chop pork belly filet mignon porchetta turkey chicken cupim tri-tip. Picanha fatback tongue drumstick shoulder t-bone filet mignon, salami chuck leberkas landjaeger kielbasa. Landjaeger porchetta swine cupim, capicola flank meatloaf pig hamburger brisket shank frankfurter short ribs. Rump short loin tenderloin shankle pig brisket.
+          </div>
+          <div class="post">
+            5
+            Pork loin pastrami corned beef venison rump. Cupim meatloaf sirloin pig tail pancetta tongue sausage pork loin ground round salami venison ham hock jerky shank. Shankle brisket ham hock, doner andouille landjaeger shank bacon pastrami venison jerky kielbasa. Chicken kielbasa prosciutto, short ribs boudin beef ribeye chuck andouille beef ribs corned beef cupim shoulder. Short ribs kevin tri-tip, venison tongue filet mignon picanha biltong ground round. Hamburger beef ribs pork chop, jerky capicola shank ribeye porchetta shoulder turkey leberkas pancetta ground round jowl.
+          </div>
+          <div class="post">
+            6
+            Andouille short loin ham hock bresaola beef ribs. Short ribs meatball tri-tip swine ham pastrami alcatra chuck. Shank pastrami sirloin strip steak, ham biltong tri-tip jowl pancetta tenderloin. Sirloin alcatra tenderloin drumstick pancetta. Pork loin ground round venison short ribs. Frankfurter tenderloin bacon pork loin ribeye.
+          </div>
+        </div> 
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+          <div class="post">
+            7
+            Nulla in pork belly dolor. Labore laboris eiusmod ut ribeye ut cupim. Labore boudin kielbasa est shankle dolore minim aute exercitation swine. Irure aliqua do, labore lorem elit ut commodo.
+          </div>
+          <div class="post">
+            8
+            Doner do quis, turducken spare ribs velit consequat id andouille eu shankle est in. Short loin ham kevin andouille spare ribs culpa esse dolore consectetur id nisi. Turkey incididunt cupim, laboris pancetta biltong ullamco proident nulla turducken jerky voluptate shankle eu. Sint ut kielbasa aliqua est beef venison laborum quis meatloaf flank qui salami voluptate. Tempor cillum elit, officia chicken flank pancetta chuck sint aliqua t-bone velit eiusmod picanha. Meatloaf ullamco ground round pastrami boudin sunt.
+          </div>
+          <div class="post">
+            9
+            Pork shank spare ribs elit sunt irure, magna strip steak quis alcatra brisket. Consectetur dolore eu ut corned beef sausage qui tri-tip ball tip pork belly id tenderloin esse aute. Sint in enim est tempor, capicola consequat bresaola officia. Est leberkas cow, sausage excepteur tenderloin consequat chuck ullamco short ribs magna do alcatra.
+          </div>
+        </div> 
+      </div>
+    </div>
+
+
+    <div class="container">
+      <h1>Masonry CSS with Bootstrap</h1>
+      <div class="row">
+        <div class="item">
+          <div class="well"> 
+            1 blah blah blah
+          </div>
+        </div>
+        <div class="item">
+          <div class="well"> 
+            2 blah blah blah blah blah blah blah blah blah blah blah blahblah blah blah blah blah blah
+          </div>
+        </div>
+        <div class="item">
+          <div class="well"> 
+            3 blah blah blah blah blah blah blah blah h
+          </div>
+        </div>
+        <div class="item">
+          <div class="well">
+            blah blah blah blah 
+          </div>
+        </div>
+        <div class="item">
+          <div class="well"> 
+            blah blah blah. The container inside the item must be position:relative
+          </div>
+        </div>
+        <div class="item">
+          <div class="well"> 
+            blah blah blah blah blah blah blah blah blah blah blah blahblah blah blah blah blah blah
+          </div>
+        </div>
+        <div class="item">
+          <div class="well">
+            blah blah blah blah blah blah blah blah h
+          </div>
+        </div>
+        <div class="item">
+          <div class="well"> 
+            blah blah blah blah
+          </div>
+        </div>
+        <div class="item">
+          <div class="well"> 
+            blah blah blah blah blah blah blah blah blah blah blah blah
+          </div>
+        </div>
+        <div class="item">
+          <div class="well"> 
+            blah blah blah. The container inside the item must be position:relative
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
+
 
 
   <?php get_template_part('templates/content', 'page'); ?>
